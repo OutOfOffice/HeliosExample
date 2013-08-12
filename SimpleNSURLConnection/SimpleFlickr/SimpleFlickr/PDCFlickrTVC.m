@@ -7,22 +7,24 @@
 //
 
 #import "PDCFlickrTVC.h"
+#import "FlickrFetcher.h"
 
 @interface PDCFlickrTVC ()
-
+@property (nonatomic, strong) NSArray *photos; // of NSDictionary
 @end
 
 @implementation PDCFlickrTVC
 
+- (void)setPhotos:(NSArray *)photos
+{
+    _photos = photos;
+    [self.tableView reloadData];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.photos = [FlickrFetcher latestGeoreferencedPhotos];
 }
 
 
@@ -37,15 +39,27 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return [self.photos count];
+}
+
+- (NSString *)titleForRow:(NSUInteger)row
+{
+    return [self.photos[row][FLICKR_PHOTO_TITLE] description]; // description because could be NSNull
+}
+
+- (NSString *)subtitleForRow:(NSUInteger)row
+{
+    return [self.photos[row][FLICKR_PHOTO_OWNER] description]; // description because could be NSNull
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"Flickr Photo Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.textLabel.text = [self titleForRow:indexPath.row];
+    cell.detailTextLabel.text = [self subtitleForRow:indexPath.row];
     
     return cell;
 }
