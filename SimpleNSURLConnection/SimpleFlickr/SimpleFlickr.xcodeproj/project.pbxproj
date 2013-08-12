@@ -20,6 +20,7 @@
 		CFF4A45917B8E3CA007B6B30 /* PDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A45817B8E3CA007B6B30 /* PDCViewController.m */; };
 		CFF4A46317B8E3FB007B6B30 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A46217B8E3FB007B6B30 /* FlickrFetcher.m */; };
 		CFF4A46717B8EF07007B6B30 /* PDCFlickrTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A46617B8EF07007B6B30 /* PDCFlickrTVC.m */; };
+		CFF4A46A17B8F24B007B6B30 /* PDCPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A46917B8F24B007B6B30 /* PDCPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		CFF4A46417B8E562007B6B30 /* FlickrAPIKey_copyme_after_entering_key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey_copyme_after_entering_key.h; sourceTree = "<group>"; };
 		CFF4A46517B8EF07007B6B30 /* PDCFlickrTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCFlickrTVC.h; sourceTree = "<group>"; };
 		CFF4A46617B8EF07007B6B30 /* PDCFlickrTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCFlickrTVC.m; sourceTree = "<group>"; };
+		CFF4A46817B8F24B007B6B30 /* PDCPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCPhotoViewController.h; sourceTree = "<group>"; };
+		CFF4A46917B8F24B007B6B30 /* PDCPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCPhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				CFF4A45417B8E3CA007B6B30 /* MainStoryboard.storyboard */,
 				CFF4A46517B8EF07007B6B30 /* PDCFlickrTVC.h */,
 				CFF4A46617B8EF07007B6B30 /* PDCFlickrTVC.m */,
+				CFF4A46817B8F24B007B6B30 /* PDCPhotoViewController.h */,
+				CFF4A46917B8F24B007B6B30 /* PDCPhotoViewController.m */,
 				CFF4A45717B8E3CA007B6B30 /* PDCViewController.h */,
 				CFF4A45817B8E3CA007B6B30 /* PDCViewController.m */,
 				CFF4A44317B8E3CA007B6B30 /* Supporting Files */,
@@ -201,6 +206,7 @@
 				CFF4A45917B8E3CA007B6B30 /* PDCViewController.m in Sources */,
 				CFF4A46317B8E3FB007B6B30 /* FlickrFetcher.m in Sources */,
 				CFF4A46717B8EF07007B6B30 /* PDCFlickrTVC.m in Sources */,
+				CFF4A46A17B8F24B007B6B30 /* PDCPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
