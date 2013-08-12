@@ -58,10 +58,16 @@
     return _imageView;
 }
 
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.imageView;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.scrollView.delegate = self;
+    self.scrollView.minimumZoomScale = 0.2;
+    self.scrollView.maximumZoomScale = 5.0;
     [self resetImage];
 }
 
