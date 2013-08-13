@@ -19,8 +19,6 @@
 
 #pragma mark - View Controller Lifecycle
 
-// Just sets the Refresh Control's target/action since it can't be set in Xcode (bug?).
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -29,20 +27,11 @@
                   forControlEvents:UIControlEventValueChanged];
 }
 
-// Whenever the table is about to appear, if we have not yet opened/created or demo document, do so.
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     if (!self.managedObjectContext) [self useDemoDocument];
 }
-
-// Either creates, opens or just uses the demo document
-//   (actually, it will never "just use" it since it just creates the UIManagedDocument instance here;
-//    the "just uses" case is just shown that if someone hands you a UIManagedDocument, it might already
-//    be open and so you can just use it if it's documentState is UIDocumentStateNormal).
-//
-// Creating and opening are asynchronous, so in the completion handler we set our Model (managedObjectContext).
 
 - (void)useDemoDocument
 {
@@ -70,12 +59,8 @@
     }
 }
 
-#pragma mark - Refreshing
 
-// Fires off a block on a queue to fetch data from Flickr.
-// When the data comes back, it is loaded into Core Data by posting a block to do so on
-//   self.managedObjectContext's proper queue (using performBlock:).
-// Data is loaded into Core Data by calling photoWithFlickrInfo:inManagedObjectContext: category method.
+#pragma mark - Refreshing
 
 - (IBAction)refresh
 {
@@ -114,9 +99,6 @@
 
 #pragma mark - UITableViewDataSource
 
-// Uses NSFetchedResultsController's objectAtIndexPath: to find the Photographer for this row in the table.
-// Then uses that Photographer to set the cell up.
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Photographer"];
@@ -126,6 +108,27 @@
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%d photos", [photographer.photos count]];
     
     return cell;
+}
+
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = nil;
+    
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        indexPath = [self.tableView indexPathForCell:sender];
+    }
+    
+    if (indexPath) {
+        if ([segue.identifier isEqualToString:@"setPhotographer:"]) {
+            Photographer *photographer = [self.fetchedResultsController objectAtIndexPath:indexPath];
+            if ([segue.destinationViewController respondsToSelector:@selector(setPhotographer:)]) {
+                [segue.destinationViewController performSelector:@selector(setPhotographer:) withObject:photographer];
+            }
+        }
+    }
 }
 
 @end

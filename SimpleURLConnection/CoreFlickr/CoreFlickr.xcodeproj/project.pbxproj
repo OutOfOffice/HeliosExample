@@ -26,6 +26,7 @@
 		CFF4A4BB17B9F560007B6B30 /* Photographer+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4B917B9F560007B6B30 /* Photographer+Create.m */; };
 		CFF4A4BE17B9F5F6007B6B30 /* PhotographerCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4BD17B9F5F6007B6B30 /* PhotographerCDTVC.m */; };
 		CFF4A4C017B9F676007B6B30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A4BF17B9F676007B6B30 /* CoreData.framework */; };
+		CFF4A4C317BA098B007B6B30 /* PhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,8 @@
 		CFF4A4BC17B9F5F6007B6B30 /* PhotographerCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotographerCDTVC.h; sourceTree = "<group>"; };
 		CFF4A4BD17B9F5F6007B6B30 /* PhotographerCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotographerCDTVC.m; sourceTree = "<group>"; };
 		CFF4A4BF17B9F676007B6B30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CFF4A4C117BA098B007B6B30 /* PhotosCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCDTVC.h; sourceTree = "<group>"; };
+		CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCDTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				CFF4A48F17B9F007007B6B30 /* MainStoryboard.storyboard */,
 				CFF4A4BC17B9F5F6007B6B30 /* PhotographerCDTVC.h */,
 				CFF4A4BD17B9F5F6007B6B30 /* PhotographerCDTVC.m */,
+				CFF4A4C117BA098B007B6B30 /* PhotosCDTVC.h */,
+				CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */,
 				CFF4A49A17B9F1B8007B6B30 /* CoreDataTableViewController.h */,
 				CFF4A49B17B9F1B8007B6B30 /* CoreDataTableViewController.m */,
 				CFF4A47E17B9F007007B6B30 /* Supporting Files */,
@@ -241,6 +246,7 @@
 				CFF4A4BA17B9F560007B6B30 /* Photo+Flickr.m in Sources */,
 				CFF4A4BB17B9F560007B6B30 /* Photographer+Create.m in Sources */,
 				CFF4A4BE17B9F5F6007B6B30 /* PhotographerCDTVC.m in Sources */,
+				CFF4A4C317BA098B007B6B30 /* PhotosCDTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
