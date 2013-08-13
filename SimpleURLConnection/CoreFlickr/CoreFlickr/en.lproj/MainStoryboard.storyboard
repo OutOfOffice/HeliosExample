@@ -58,11 +58,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo" textLabel="mM5-nH-NaJ" detailTextLabel="WDf-4n-haF" style="IBUITableViewCellStyleSubtitle" id="71j-0i-lsE">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo" textLabel="mM5-nH-NaJ" detailTextLabel="WDf-4n-haF" style="IBUITableViewCellStyleSubtitle" id="71j-0i-lsE">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mM5-nH-NaJ">
@@ -78,6 +78,9 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="eRb-pd-U8o" kind="push" identifier="Display Photo" id="POt-ka-dhr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -90,6 +93,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7q-mS-BaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1278" y="105"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="d6L-VY-vSQ">
+            <objects>
+                <viewController id="eRb-pd-U8o" customClass="PhotoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hba-aO-cNF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRy-Fx-Ptm">
+                                <connections>
+                                    <outlet property="delegate" destination="eRb-pd-U8o" id="PfN-2h-uKn"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oRy-Fx-Ptm" firstAttribute="trailing" secondItem="Hba-aO-cNF" secondAttribute="trailing" type="default" id="9xI-X6-LDH"/>
+                            <constraint firstItem="oRy-Fx-Ptm" firstAttribute="leading" secondItem="Hba-aO-cNF" secondAttribute="leading" type="default" id="F69-pG-BTB"/>
+                            <constraint firstItem="oRy-Fx-Ptm" firstAttribute="top" secondItem="Hba-aO-cNF" secondAttribute="top" type="default" id="g3P-66-Ja0"/>
+                            <constraint firstItem="oRy-Fx-Ptm" firstAttribute="bottom" secondItem="Hba-aO-cNF" secondAttribute="bottom" type="default" id="qxt-Xs-ePb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hxh-S9-ZDf"/>
+                    <connections>
+                        <outlet property="scrollView" destination="oRy-Fx-Ptm" id="kJg-tR-PAb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tev-9z-Q4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="foz-YF-Pnv">
@@ -113,6 +147,15 @@
     <classes>
         <class className="CoreDataTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CoreDataTableViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PhotoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
         </class>
         <class className="PhotographerCDTVC" superclassName="CoreDataTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotographerCDTVC.h"/>

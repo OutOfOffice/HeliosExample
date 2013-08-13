@@ -56,4 +56,22 @@
     
 }
 
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Display Photo"]) {
+        if (![sender isKindOfClass:[UITableViewCell class]]) return;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        if (!indexPath) return;
+        if ([segue.destinationViewController respondsToSelector:@selector(setPhoto:)]) {
+            Photo *photo = [self.fetchedResultsController objectAtIndexPath:indexPath];
+
+            [segue.destinationViewController performSelector:@selector(setPhoto:) withObject:photo];
+            [segue.destinationViewController setTitle:photo.title];
+        }
+    }
+}
+
 @end

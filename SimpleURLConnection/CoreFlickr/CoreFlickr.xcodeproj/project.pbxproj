@@ -27,6 +27,7 @@
 		CFF4A4BE17B9F5F6007B6B30 /* PhotographerCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4BD17B9F5F6007B6B30 /* PhotographerCDTVC.m */; };
 		CFF4A4C017B9F676007B6B30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A4BF17B9F676007B6B30 /* CoreData.framework */; };
 		CFF4A4C317BA098B007B6B30 /* PhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */; };
+		CFF4A4C617BA499A007B6B30 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4C517BA4999007B6B30 /* PhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,8 @@
 		CFF4A4BF17B9F676007B6B30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CFF4A4C117BA098B007B6B30 /* PhotosCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCDTVC.h; sourceTree = "<group>"; };
 		CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCDTVC.m; sourceTree = "<group>"; };
+		CFF4A4C417BA4999007B6B30 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		CFF4A4C517BA4999007B6B30 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				CFF4A48617B9F007007B6B30 /* PDCAppDelegate.h */,
 				CFF4A48717B9F007007B6B30 /* PDCAppDelegate.m */,
 				CFF4A48F17B9F007007B6B30 /* MainStoryboard.storyboard */,
+				CFF4A4C417BA4999007B6B30 /* PhotoViewController.h */,
+				CFF4A4C517BA4999007B6B30 /* PhotoViewController.m */,
 				CFF4A4BC17B9F5F6007B6B30 /* PhotographerCDTVC.h */,
 				CFF4A4BD17B9F5F6007B6B30 /* PhotographerCDTVC.m */,
 				CFF4A4C117BA098B007B6B30 /* PhotosCDTVC.h */,
@@ -247,6 +252,7 @@
 				CFF4A4BB17B9F560007B6B30 /* Photographer+Create.m in Sources */,
 				CFF4A4BE17B9F5F6007B6B30 /* PhotographerCDTVC.m in Sources */,
 				CFF4A4C317BA098B007B6B30 /* PhotosCDTVC.m in Sources */,
+				CFF4A4C617BA499A007B6B30 /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
