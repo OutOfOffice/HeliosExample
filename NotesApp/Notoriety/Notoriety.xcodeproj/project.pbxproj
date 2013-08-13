@@ -23,6 +23,9 @@
 		CFF4A50917BA80B4007B6B30 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A50817BA80B4007B6B30 /* Note.m */; };
 		CFF4A50C17BA80B4007B6B30 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A50B17BA80B4007B6B30 /* Author.m */; };
 		CFF4A50E17BA8204007B6B30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A50D17BA8204007B6B30 /* CoreData.framework */; };
+		CFF4A51117BA8384007B6B30 /* Note+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A51017BA8384007B6B30 /* Note+Create.m */; };
+		CFF4A51417BA848D007B6B30 /* Author+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A51317BA848D007B6B30 /* Author+Create.m */; };
+		CFF4A51717BA885E007B6B30 /* NoteDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A51617BA885E007B6B30 /* NoteDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,13 @@
 		CFF4A50A17BA80B4007B6B30 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
 		CFF4A50B17BA80B4007B6B30 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
 		CFF4A50D17BA8204007B6B30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CFF4A50F17BA8384007B6B30 /* Note+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Note+Create.h"; sourceTree = "<group>"; };
+		CFF4A51017BA8384007B6B30 /* Note+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Note+Create.m"; sourceTree = "<group>"; };
+		CFF4A51217BA848D007B6B30 /* Author+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Author+Create.h"; sourceTree = "<group>"; };
+		CFF4A51317BA848D007B6B30 /* Author+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Author+Create.m"; sourceTree = "<group>"; };
+		CFF4A51517BA885E007B6B30 /* NoteDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailVC.h; sourceTree = "<group>"; };
+		CFF4A51617BA885E007B6B30 /* NoteDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailVC.m; sourceTree = "<group>"; };
+		CFF4A51817BA89AD007B6B30 /* NoteDetailVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailVCDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,9 @@
 				CFF4A4E217BA7C9C007B6B30 /* PDCAppDelegate.h */,
 				CFF4A4E317BA7C9C007B6B30 /* PDCAppDelegate.m */,
 				CFF4A4EB17BA7C9C007B6B30 /* MainStoryboard.storyboard */,
+				CFF4A51517BA885E007B6B30 /* NoteDetailVC.h */,
+				CFF4A51617BA885E007B6B30 /* NoteDetailVC.m */,
+				CFF4A51817BA89AD007B6B30 /* NoteDetailVCDelegate.h */,
 				CFF4A4FE17BA7EDF007B6B30 /* NoteListCDTVC.h */,
 				CFF4A4FF17BA7EDF007B6B30 /* NoteListCDTVC.m */,
 				CFF4A4FB17BA7EBF007B6B30 /* CoreDataTableViewController.h */,
@@ -130,8 +143,12 @@
 			children = (
 				CFF4A50A17BA80B4007B6B30 /* Author.h */,
 				CFF4A50B17BA80B4007B6B30 /* Author.m */,
+				CFF4A51217BA848D007B6B30 /* Author+Create.h */,
+				CFF4A51317BA848D007B6B30 /* Author+Create.m */,
 				CFF4A50717BA80B4007B6B30 /* Note.h */,
 				CFF4A50817BA80B4007B6B30 /* Note.m */,
+				CFF4A50F17BA8384007B6B30 /* Note+Create.h */,
+				CFF4A51017BA8384007B6B30 /* Note+Create.m */,
 				CFF4A4F817BA7CF9007B6B30 /* Notoriety.xcdatamodeld */,
 			);
 			name = "Core Data";
@@ -211,6 +228,9 @@
 				CFF4A50017BA7EDF007B6B30 /* NoteListCDTVC.m in Sources */,
 				CFF4A50917BA80B4007B6B30 /* Note.m in Sources */,
 				CFF4A50C17BA80B4007B6B30 /* Author.m in Sources */,
+				CFF4A51117BA8384007B6B30 /* Note+Create.m in Sources */,
+				CFF4A51417BA848D007B6B30 /* Author+Create.m in Sources */,
+				CFF4A51717BA885E007B6B30 /* NoteDetailVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

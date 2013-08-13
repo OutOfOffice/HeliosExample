@@ -7,7 +7,8 @@
 //
 
 #import "NoteListCDTVC.h"
-#import "Note.h"
+#import "NoteDetailVC.h"
+#import "Note+Create.h"
 #import "Author.h"
 
 @interface NoteListCDTVC ()
@@ -75,6 +76,36 @@
     cell.detailTextLabel.text = [NSString stringWithFormat:@"last edited by: %@", note.lastEditBy.name];
     
     return cell;
+}
+
+
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Note Detail"] || [segue.identifier isEqualToString:@"Add Note"]) {
+        Note *note = nil;
+        if ([sender isKindOfClass:[UITableViewCell class]]) {
+            NSIndexPath *indexPath = nil;
+            indexPath = [self.tableView indexPathForCell:sender];
+            if (!indexPath) return;
+            note = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        } else {
+            note = [Note noteWithText:@"Enter note here." authorName:@"test author" inManagedObjectContext:self.managedObjectContext];
+        }
+        
+        NoteDetailVC *vc = (NoteDetailVC *)segue.destinationViewController;
+        vc.delegate = self;
+        vc.note = note;
+    }
+}
+
+
+#pragma mark - Note Detail Delegates
+
+- (void)noteDetailVC:(NoteDetailVC *)noteDetailVC didSaveNote:(Note *)note
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

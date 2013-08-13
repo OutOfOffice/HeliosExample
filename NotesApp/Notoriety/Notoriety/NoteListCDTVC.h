@@ -7,7 +7,8 @@
 //
 
 #import "CoreDataTableViewController.h"
+#import "NoteDetailVCDelegate.h"
 
-@interface NoteListCDTVC : CoreDataTableViewController
+@interface NoteListCDTVC : CoreDataTableViewController <NoteDetailVCDelegate>
 
 @end
