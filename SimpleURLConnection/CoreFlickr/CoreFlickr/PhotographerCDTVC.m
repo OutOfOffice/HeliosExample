@@ -9,6 +9,7 @@
 #import "PhotographerCDTVC.h"
 #import "FlickrFetcher.h"
 #import "Photo+Flickr.h"
+#import "Photographer.h"
 
 @interface PhotographerCDTVC ()
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
@@ -92,6 +93,39 @@
             });
         }];
     });
+}
+
+
+#pragma mark - Properties
+
+- (void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
+{
+    _managedObjectContext = managedObjectContext;
+    if (managedObjectContext) {
+        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Photographer"];
+        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)]];
+        request.predicate = nil; // all Photographers
+        self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    } else {
+        self.fetchedResultsController = nil;
+    }
+}
+
+
+#pragma mark - UITableViewDataSource
+
+// Uses NSFetchedResultsController's objectAtIndexPath: to find the Photographer for this row in the table.
+// Then uses that Photographer to set the cell up.
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Photographer"];
+    
+    Photographer *photographer = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = photographer.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d photos", [photographer.photos count]];
+    
+    return cell;
 }
 
 @end
