@@ -1,13 +1,13 @@
 //
-//  PDCViewController.h
+//  NoteListCDTVC.h
 //  Notoriety
 //
 //  Created by koba on 8/13/13.
 //  Copyright (c) 2013 Pas de Chocolat, LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CoreDataTableViewController.h"
 
-@interface PDCViewController : UIViewController
+@interface NoteListCDTVC : CoreDataTableViewController
 
 @end

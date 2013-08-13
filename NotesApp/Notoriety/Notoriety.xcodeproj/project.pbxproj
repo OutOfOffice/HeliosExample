@@ -17,8 +17,12 @@
 		CFF4A4E817BA7C9C007B6B30 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A4E717BA7C9C007B6B30 /* Default@2x.png */; };
 		CFF4A4EA17BA7C9C007B6B30 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A4E917BA7C9C007B6B30 /* Default-568h@2x.png */; };
 		CFF4A4ED17BA7C9C007B6B30 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A4EB17BA7C9C007B6B30 /* MainStoryboard.storyboard */; };
-		CFF4A4F017BA7C9C007B6B30 /* PDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4EF17BA7C9C007B6B30 /* PDCViewController.m */; };
 		CFF4A4FA17BA7CF9007B6B30 /* Notoriety.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4F817BA7CF9007B6B30 /* Notoriety.xcdatamodeld */; };
+		CFF4A4FD17BA7EBF007B6B30 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4FC17BA7EBF007B6B30 /* CoreDataTableViewController.m */; };
+		CFF4A50017BA7EDF007B6B30 /* NoteListCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4FF17BA7EDF007B6B30 /* NoteListCDTVC.m */; };
+		CFF4A50917BA80B4007B6B30 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A50817BA80B4007B6B30 /* Note.m */; };
+		CFF4A50C17BA80B4007B6B30 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A50B17BA80B4007B6B30 /* Author.m */; };
+		CFF4A50E17BA8204007B6B30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A50D17BA8204007B6B30 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +40,16 @@
 		CFF4A4E717BA7C9C007B6B30 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CFF4A4E917BA7C9C007B6B30 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CFF4A4EC17BA7C9C007B6B30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CFF4A4EE17BA7C9C007B6B30 /* PDCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDCViewController.h; sourceTree = "<group>"; };
-		CFF4A4EF17BA7C9C007B6B30 /* PDCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDCViewController.m; sourceTree = "<group>"; };
 		CFF4A4F917BA7CF9007B6B30 /* Notoriety.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notoriety.xcdatamodel; sourceTree = "<group>"; };
+		CFF4A4FB17BA7EBF007B6B30 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		CFF4A4FC17BA7EBF007B6B30 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		CFF4A4FE17BA7EDF007B6B30 /* NoteListCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListCDTVC.h; sourceTree = "<group>"; };
+		CFF4A4FF17BA7EDF007B6B30 /* NoteListCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListCDTVC.m; sourceTree = "<group>"; };
+		CFF4A50717BA80B4007B6B30 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		CFF4A50817BA80B4007B6B30 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		CFF4A50A17BA80B4007B6B30 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		CFF4A50B17BA80B4007B6B30 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		CFF4A50D17BA8204007B6B30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF4A50E17BA8204007B6B30 /* CoreData.framework in Frameworks */,
 				CFF4A4D417BA7C9C007B6B30 /* UIKit.framework in Frameworks */,
 				CFF4A4D617BA7C9C007B6B30 /* Foundation.framework in Frameworks */,
 				CFF4A4D817BA7C9C007B6B30 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +87,7 @@
 		CFF4A4D217BA7C9C007B6B30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFF4A50D17BA8204007B6B30 /* CoreData.framework */,
 				CFF4A4D317BA7C9C007B6B30 /* UIKit.framework */,
 				CFF4A4D517BA7C9C007B6B30 /* Foundation.framework */,
 				CFF4A4D717BA7C9C007B6B30 /* CoreGraphics.framework */,
@@ -89,8 +102,10 @@
 				CFF4A4E217BA7C9C007B6B30 /* PDCAppDelegate.h */,
 				CFF4A4E317BA7C9C007B6B30 /* PDCAppDelegate.m */,
 				CFF4A4EB17BA7C9C007B6B30 /* MainStoryboard.storyboard */,
-				CFF4A4EE17BA7C9C007B6B30 /* PDCViewController.h */,
-				CFF4A4EF17BA7C9C007B6B30 /* PDCViewController.m */,
+				CFF4A4FE17BA7EDF007B6B30 /* NoteListCDTVC.h */,
+				CFF4A4FF17BA7EDF007B6B30 /* NoteListCDTVC.m */,
+				CFF4A4FB17BA7EBF007B6B30 /* CoreDataTableViewController.h */,
+				CFF4A4FC17BA7EBF007B6B30 /* CoreDataTableViewController.m */,
 				CFF4A4DA17BA7C9C007B6B30 /* Supporting Files */,
 			);
 			path = Notoriety;
@@ -113,6 +128,10 @@
 		CFF4A4F617BA7CCD007B6B30 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				CFF4A50A17BA80B4007B6B30 /* Author.h */,
+				CFF4A50B17BA80B4007B6B30 /* Author.m */,
+				CFF4A50717BA80B4007B6B30 /* Note.h */,
+				CFF4A50817BA80B4007B6B30 /* Note.m */,
 				CFF4A4F817BA7CF9007B6B30 /* Notoriety.xcdatamodeld */,
 			);
 			name = "Core Data";
@@ -187,8 +206,11 @@
 			files = (
 				CFF4A4E017BA7C9C007B6B30 /* main.m in Sources */,
 				CFF4A4E417BA7C9C007B6B30 /* PDCAppDelegate.m in Sources */,
-				CFF4A4F017BA7C9C007B6B30 /* PDCViewController.m in Sources */,
 				CFF4A4FA17BA7CF9007B6B30 /* Notoriety.xcdatamodeld in Sources */,
+				CFF4A4FD17BA7EBF007B6B30 /* CoreDataTableViewController.m in Sources */,
+				CFF4A50017BA7EDF007B6B30 /* NoteListCDTVC.m in Sources */,
+				CFF4A50917BA80B4007B6B30 /* Note.m in Sources */,
+				CFF4A50C17BA80B4007B6B30 /* Author.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
