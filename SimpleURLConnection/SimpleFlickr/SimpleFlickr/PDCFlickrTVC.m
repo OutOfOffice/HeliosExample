@@ -70,18 +70,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"Display Photo"]) {
-        NSLog(@"1");
         if (![sender isKindOfClass:[UITableViewCell class]]) return;
-        NSLog(@"2");
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         if (!indexPath) return;
-        NSLog(@"3");
         if ([segue.destinationViewController respondsToSelector:@selector(setPhotoURL:)]) {
-            NSLog(@"4");
             NSURL *url = [FlickrFetcher urlForPhoto:self.photos[indexPath.row] format:FlickrPhotoFormatLarge];
             [segue.destinationViewController performSelector:@selector(setPhotoURL:) withObject:url];
             [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
-            NSLog(@"segue url: %@", [url absoluteString]);
         }
     }
 }
