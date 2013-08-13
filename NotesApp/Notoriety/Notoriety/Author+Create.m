@@ -27,10 +27,8 @@
         if (![matches count]) {
             author = [NSEntityDescription insertNewObjectForEntityForName:@"Author" inManagedObjectContext:context];
             author.name = name;
-            NSLog(@"create new author");
         } else {
             // Any match, pick one...
-            NSLog(@"reuse existing author");
             author = [matches lastObject];
         }
     }
