@@ -21,12 +21,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCi-Aq-2fn">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh8-gG-svw">
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="14"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
@@ -44,7 +44,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Notes" id="v9p-GO-60e">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="75U-IU-dnl">
+                        <barButtonItem key="leftBarButtonItem" image="817-costume.png" id="xeA-jR-KsC">
+                            <connections>
+                                <segue destination="yAe-VK-rrK" kind="modal" identifier="Login" modalTransitionStyle="coverVertical" id="ht8-0c-3UL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="75U-IU-dnl">
                             <connections>
                                 <segue destination="B3Z-vJ-XQU" kind="push" identifier="Add Note" id="kDR-tK-Lae"/>
                             </connections>
@@ -54,6 +59,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHt-QU-Rba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="650" y="89"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="VlZ-Uk-fdu">
+            <objects>
+                <viewController id="yAe-VK-rrK" customClass="LoginVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTN-1y-dNp">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5l-oZ-ak1">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1L-0x-zsA">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glp-Eu-ApA">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAuthor:" destination="yAe-VK-rrK" eventType="touchUpInside" id="Hcq-Oj-SJu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j1L-0x-zsA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7iH-gX-0fL"/>
+                            <constraint firstItem="Glp-Eu-ApA" firstAttribute="top" secondItem="h5l-oZ-ak1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="FNl-1I-GKT"/>
+                            <constraint firstItem="j1L-0x-zsA" firstAttribute="top" secondItem="VTN-1y-dNp" secondAttribute="top" constant="20" symbolic="YES" type="default" id="GJs-uA-dmW"/>
+                            <constraint firstAttribute="trailing" secondItem="Glp-Eu-ApA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="KTH-Rn-m3A"/>
+                            <constraint firstItem="j1L-0x-zsA" firstAttribute="leading" secondItem="VTN-1y-dNp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Lde-1e-sC4"/>
+                            <constraint firstItem="h5l-oZ-ak1" firstAttribute="top" secondItem="j1L-0x-zsA" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WdM-eU-Xee"/>
+                            <constraint firstAttribute="trailing" secondItem="h5l-oZ-ak1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lgK-zw-p8j"/>
+                            <constraint firstItem="Glp-Eu-ApA" firstAttribute="leading" secondItem="VTN-1y-dNp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="p6k-oe-Z8U"/>
+                            <constraint firstItem="h5l-oZ-ak1" firstAttribute="leading" secondItem="VTN-1y-dNp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zuK-7t-jK7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="h5l-oZ-ak1" id="kl4-LY-4gv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C3f-tu-Yfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="-737"/>
         </scene>
         <!--Note DetailVC-->
         <scene sceneID="aGL-e3-F54">
@@ -128,24 +185,9 @@
             <point key="canvasLocation" x="124" y="89"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CoreDataTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoreDataTableViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="NoteDetailVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoteDetailVC.h"/>
-            <relationships>
-                <relationship kind="action" name="saveNote:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="noteTextView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="NoteListCDTVC" superclassName="CoreDataTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoteListCDTVC.h"/>
-        </class>
-    </classes>
+    <resources>
+        <image name="817-costume.png" width="28" height="19"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

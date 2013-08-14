@@ -27,4 +27,12 @@
     return note;
 }
 
+- (void)editNoteText:(NSString *)text byAuthorName:(NSString *)authorName
+{
+    Author *author = [Author authorWithName:authorName inManagedObjectContext:self.managedObjectContext];
+    self.lastEditBy = author;
+    self.lastEditAt = [NSDate date];
+    self.text = text;
+}
+
 @end

@@ -7,9 +7,11 @@
 //
 
 #import "NoteListCDTVC.h"
+#import "Author.h"
+#import "Login.h"
+#import "LoginVC.h"
 #import "NoteDetailVC.h"
 #import "Note+Create.h"
-#import "Author.h"
 
 @interface NoteListCDTVC ()
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
@@ -17,10 +19,16 @@
 
 @implementation NoteListCDTVC
 
+- (void)verifyLoggedIn
+{
+    if (![Login currentAuthorName] && self.managedObjectContext) [self performSegueWithIdentifier:@"Login" sender:nil];
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     if (!self.managedObjectContext) [self useNotesDocument];
+    [self verifyLoggedIn];
 }
 
 - (void)useNotesDocument
@@ -35,12 +43,14 @@
           completionHandler:^(BOOL success) {
               if (success) {
                   self.managedObjectContext = document.managedObjectContext;
+                  [self verifyLoggedIn];
               }
           }];
     } else if (document.documentState == UIDocumentStateClosed) {
         [document openWithCompletionHandler:^(BOOL success) {
             if (success) {
                 self.managedObjectContext = document.managedObjectContext;
+                [self verifyLoggedIn];
             }
         }];
     } else {
@@ -91,13 +101,27 @@
             if (!indexPath) return;
             note = [self.fetchedResultsController objectAtIndexPath:indexPath];
         } else {
-            note = [Note noteWithText:@"Enter note here." authorName:@"test author" inManagedObjectContext:self.managedObjectContext];
+            note = [Note noteWithText:@"Enter note here."
+                           authorName:[Login currentAuthorName]
+               inManagedObjectContext:self.managedObjectContext];
         }
         
         NoteDetailVC *vc = (NoteDetailVC *)segue.destinationViewController;
         vc.delegate = self;
         vc.note = note;
+    } else if ([segue.identifier isEqualToString:@"Login"]) {
+        LoginVC *vc = (LoginVC *)segue.destinationViewController;
+        vc.managedObjectContext = self.managedObjectContext;
+        vc.delegate = self;
     }
+}
+
+
+#pragma mark - Login Delegates
+
+- (void)loginVCDidCompleteLogin:(LoginVC *)loginVC
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

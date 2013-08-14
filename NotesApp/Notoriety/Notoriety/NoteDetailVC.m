@@ -7,6 +7,7 @@
 //
 
 #import "NoteDetailVC.h"
+#import "Login.h"
 #import "Note+Create.h"
 
 @interface NoteDetailVC ()
@@ -23,7 +24,7 @@
 
 - (IBAction)saveNote:(UIBarButtonItem *)sender
 {
-    self.note.text = self.noteTextView.text;
+    [self.note editNoteText:self.noteTextView.text byAuthorName:[Login currentAuthorName]];
     if (self.delegate && [self.delegate respondsToSelector:@selector(noteDetailVC:didSaveNote:)]) {
         [self.delegate noteDetailVC:self didSaveNote:self.note];
     }

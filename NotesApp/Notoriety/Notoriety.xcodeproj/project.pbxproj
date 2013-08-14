@@ -26,6 +26,10 @@
 		CFF4A51117BA8384007B6B30 /* Note+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A51017BA8384007B6B30 /* Note+Create.m */; };
 		CFF4A51417BA848D007B6B30 /* Author+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A51317BA848D007B6B30 /* Author+Create.m */; };
 		CFF4A51717BA885E007B6B30 /* NoteDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A51617BA885E007B6B30 /* NoteDetailVC.m */; };
+		CFF4A51C17BB0A5C007B6B30 /* 817-costume.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A51A17BB0A5C007B6B30 /* 817-costume.png */; };
+		CFF4A51D17BB0A5C007B6B30 /* 817-costume@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A51B17BB0A5C007B6B30 /* 817-costume@2x.png */; };
+		CFF4A52017BB109F007B6B30 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A51F17BB109F007B6B30 /* LoginVC.m */; };
+		CFF4A52317BB5894007B6B30 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A52217BB5894007B6B30 /* Login.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +64,13 @@
 		CFF4A51517BA885E007B6B30 /* NoteDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailVC.h; sourceTree = "<group>"; };
 		CFF4A51617BA885E007B6B30 /* NoteDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailVC.m; sourceTree = "<group>"; };
 		CFF4A51817BA89AD007B6B30 /* NoteDetailVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailVCDelegate.h; sourceTree = "<group>"; };
+		CFF4A51A17BB0A5C007B6B30 /* 817-costume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "817-costume.png"; sourceTree = "<group>"; };
+		CFF4A51B17BB0A5C007B6B30 /* 817-costume@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "817-costume@2x.png"; sourceTree = "<group>"; };
+		CFF4A51E17BB109F007B6B30 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		CFF4A51F17BB109F007B6B30 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		CFF4A52117BB5893007B6B30 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		CFF4A52217BB5894007B6B30 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		CFF4A52417BB5BFF007B6B30 /* LoginVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVCDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,11 @@
 				CFF4A4E217BA7C9C007B6B30 /* PDCAppDelegate.h */,
 				CFF4A4E317BA7C9C007B6B30 /* PDCAppDelegate.m */,
 				CFF4A4EB17BA7C9C007B6B30 /* MainStoryboard.storyboard */,
+				CFF4A51E17BB109F007B6B30 /* LoginVC.h */,
+				CFF4A51F17BB109F007B6B30 /* LoginVC.m */,
+				CFF4A52417BB5BFF007B6B30 /* LoginVCDelegate.h */,
+				CFF4A52117BB5893007B6B30 /* Login.h */,
+				CFF4A52217BB5894007B6B30 /* Login.m */,
 				CFF4A51517BA885E007B6B30 /* NoteDetailVC.h */,
 				CFF4A51617BA885E007B6B30 /* NoteDetailVC.m */,
 				CFF4A51817BA89AD007B6B30 /* NoteDetailVCDelegate.h */,
@@ -127,6 +143,7 @@
 		CFF4A4DA17BA7C9C007B6B30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFF4A51917BB0A52007B6B30 /* Images */,
 				CFF4A4DB17BA7C9C007B6B30 /* Notoriety-Info.plist */,
 				CFF4A4DC17BA7C9C007B6B30 /* InfoPlist.strings */,
 				CFF4A4DF17BA7C9C007B6B30 /* main.m */,
@@ -152,6 +169,15 @@
 				CFF4A4F817BA7CF9007B6B30 /* Notoriety.xcdatamodeld */,
 			);
 			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		CFF4A51917BB0A52007B6B30 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CFF4A51A17BB0A5C007B6B30 /* 817-costume.png */,
+				CFF4A51B17BB0A5C007B6B30 /* 817-costume@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +237,8 @@
 				CFF4A4E817BA7C9C007B6B30 /* Default@2x.png in Resources */,
 				CFF4A4EA17BA7C9C007B6B30 /* Default-568h@2x.png in Resources */,
 				CFF4A4ED17BA7C9C007B6B30 /* MainStoryboard.storyboard in Resources */,
+				CFF4A51C17BB0A5C007B6B30 /* 817-costume.png in Resources */,
+				CFF4A51D17BB0A5C007B6B30 /* 817-costume@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +259,8 @@
 				CFF4A51117BA8384007B6B30 /* Note+Create.m in Sources */,
 				CFF4A51417BA848D007B6B30 /* Author+Create.m in Sources */,
 				CFF4A51717BA885E007B6B30 /* NoteDetailVC.m in Sources */,
+				CFF4A52017BB109F007B6B30 /* LoginVC.m in Sources */,
+				CFF4A52317BB5894007B6B30 /* Login.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

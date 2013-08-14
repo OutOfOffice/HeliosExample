@@ -11,5 +11,6 @@
 @interface Note (Create)
 
 + (Note *)noteWithText:(NSString *)text authorName:(NSString *)authorName inManagedObjectContext:(NSManagedObjectContext *)context;
+- (void)editNoteText:(NSString *)text byAuthorName:(NSString *)authorName;
 
 @end
