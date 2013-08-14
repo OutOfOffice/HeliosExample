@@ -7,6 +7,7 @@
 //
 
 #import "PhotoViewController.h"
+#import "AFNetworking.h"
 
 @interface PhotoViewController () <UIScrollViewDelegate>
 
@@ -35,27 +36,20 @@
         self.imageView.image = nil;
         [self.imageView removeFromSuperview];
         
-        NSURL *url = [NSURL URLWithString:self.photo.imageURL];
-        NSData *imageData = [[NSData alloc] initWithContentsOfURL:url];
-        UIImage *image = [[UIImage alloc] initWithData:imageData];
-        if (image) {
-            self.scrollView.zoomScale = 1.0;
-            self.scrollView.contentSize = image.size;
-            self.imageView.image = image;
-            self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
-            [self.scrollView addSubview:self.imageView];
-            
-            NSDictionary *viewsDictionary = @{@"imageView":self.imageView};
-            [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[imageView]|" options:0 metrics:nil views:viewsDictionary]];
-            [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[imageView]|" options:0 metrics:nil views:viewsDictionary]];
-        }
+        [self.imageView setImageWithURL:[NSURL URLWithString:self.photo.imageURL] placeholderImage:[UIImage imageNamed:@"731-cloud-download"]];
+        self.scrollView.zoomScale = 1.0;
+        self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
+        [self.scrollView addSubview:self.imageView];
+        
+        NSDictionary *viewsDictionary = @{@"imageView":self.imageView};
+        [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[imageView]|" options:0 metrics:nil views:viewsDictionary]];
+        [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[imageView]|" options:0 metrics:nil views:viewsDictionary]];
     }
 }
 
 - (UIImageView *)imageView
 {
     if (!_imageView) _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-    _imageView.backgroundColor = [UIColor redColor];
     return _imageView;
 }
 

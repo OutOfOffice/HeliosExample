@@ -1,1176 +1,461 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>3F3A5235E8964109B173B443</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>46A8D5D27CA042F7A87BAEE3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>1</string>
-		</dict>
-		<key>6E3387A5A19E443EA2619334</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C837713FEC014B60AA62936B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>B3BE29D5AE7842B29CEF38C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>1</string>
-		</dict>
-		<key>C837713FEC014B60AA62936B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CFF4A46B17B9F007007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A47D17B9F007007B6B30</string>
-				<string>CFF4A47617B9F007007B6B30</string>
-				<string>CFF4A47517B9F007007B6B30</string>
-				<string>3F3A5235E8964109B173B443</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A46C17B9F007007B6B30</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>PDC</string>
-				<key>LastUpgradeCheck</key>
-				<string>0460</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Pas de Chocolat, LLC</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>CFF4A46F17B9F007007B6B30</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>CFF4A46B17B9F007007B6B30</string>
-			<key>productRefGroup</key>
-			<string>CFF4A47517B9F007007B6B30</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>CFF4A47317B9F007007B6B30</string>
-			</array>
-		</dict>
-		<key>CFF4A46F17B9F007007B6B30</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CFF4A49517B9F007007B6B30</string>
-				<string>CFF4A49617B9F007007B6B30</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CFF4A47017B9F007007B6B30</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CFF4A48417B9F007007B6B30</string>
-				<string>CFF4A48817B9F007007B6B30</string>
-				<string>CFF4A49C17B9F1B8007B6B30</string>
-				<string>CFF4A4A217B9F205007B6B30</string>
-				<string>CFF4A4A617B9F352007B6B30</string>
-				<string>CFF4A4B217B9F50C007B6B30</string>
-				<string>CFF4A4B517B9F50D007B6B30</string>
-				<string>CFF4A4BA17B9F560007B6B30</string>
-				<string>CFF4A4BB17B9F560007B6B30</string>
-				<string>CFF4A4BE17B9F5F6007B6B30</string>
-				<string>CFF4A4C317BA098B007B6B30</string>
-				<string>CFF4A4C617BA499A007B6B30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CFF4A47117B9F007007B6B30</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CFF4A4C017B9F676007B6B30</string>
-				<string>CFF4A47817B9F007007B6B30</string>
-				<string>CFF4A47A17B9F007007B6B30</string>
-				<string>CFF4A47C17B9F007007B6B30</string>
-				<string>6E3387A5A19E443EA2619334</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CFF4A47217B9F007007B6B30</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CFF4A48217B9F007007B6B30</string>
-				<string>CFF4A48A17B9F007007B6B30</string>
-				<string>CFF4A48C17B9F007007B6B30</string>
-				<string>CFF4A48E17B9F007007B6B30</string>
-				<string>CFF4A49117B9F007007B6B30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CFF4A47317B9F007007B6B30</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CFF4A49717B9F007007B6B30</string>
-			<key>buildPhases</key>
-			<array>
-				<string>46A8D5D27CA042F7A87BAEE3</string>
-				<string>CFF4A47017B9F007007B6B30</string>
-				<string>CFF4A47117B9F007007B6B30</string>
-				<string>CFF4A47217B9F007007B6B30</string>
-				<string>B3BE29D5AE7842B29CEF38C2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CoreFlickr</string>
-			<key>productName</key>
-			<string>CoreFlickr</string>
-			<key>productReference</key>
-			<string>CFF4A47417B9F007007B6B30</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>CFF4A47417B9F007007B6B30</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CoreFlickr.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CFF4A47517B9F007007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A47417B9F007007B6B30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A47617B9F007007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A4BF17B9F676007B6B30</string>
-				<string>CFF4A47717B9F007007B6B30</string>
-				<string>CFF4A47917B9F007007B6B30</string>
-				<string>CFF4A47B17B9F007007B6B30</string>
-				<string>C837713FEC014B60AA62936B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A47717B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CFF4A47817B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A47717B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A47917B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CFF4A47A17B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A47917B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A47B17B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CFF4A47C17B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A47B17B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A47D17B9F007007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A4A317B9F32C007B6B30</string>
-				<string>CFF4A49D17B9F1EC007B6B30</string>
-				<string>CFF4A48617B9F007007B6B30</string>
-				<string>CFF4A48717B9F007007B6B30</string>
-				<string>CFF4A48F17B9F007007B6B30</string>
-				<string>CFF4A4C417BA4999007B6B30</string>
-				<string>CFF4A4C517BA4999007B6B30</string>
-				<string>CFF4A4BC17B9F5F6007B6B30</string>
-				<string>CFF4A4BD17B9F5F6007B6B30</string>
-				<string>CFF4A4C117BA098B007B6B30</string>
-				<string>CFF4A4C217BA098B007B6B30</string>
-				<string>CFF4A49A17B9F1B8007B6B30</string>
-				<string>CFF4A49B17B9F1B8007B6B30</string>
-				<string>CFF4A47E17B9F007007B6B30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CoreFlickr</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A47E17B9F007007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A47F17B9F007007B6B30</string>
-				<string>CFF4A48017B9F007007B6B30</string>
-				<string>CFF4A48317B9F007007B6B30</string>
-				<string>CFF4A48517B9F007007B6B30</string>
-				<string>CFF4A48917B9F007007B6B30</string>
-				<string>CFF4A48B17B9F007007B6B30</string>
-				<string>CFF4A48D17B9F007007B6B30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A47F17B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>CoreFlickr-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48017B9F007007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A48117B9F007007B6B30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48117B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48217B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A48017B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A48317B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48417B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A48317B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A48517B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CoreFlickr-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48617B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PDCAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48717B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PDCAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48817B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A48717B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A48917B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Default.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48A17B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A48917B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A48B17B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Default@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48C17B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A48B17B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A48D17B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Default-568h@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A48E17B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A48D17B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A48F17B9F007007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A49017B9F007007B6B30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>MainStoryboard.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A49017B9F007007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/MainStoryboard.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A49117B9F007007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A48F17B9F007007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A49517B9F007007B6B30</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CFF4A49617B9F007007B6B30</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.1</string>
-				<key>OTHER_CFLAGS</key>
-				<string>-DNS_BLOCK_ASSERTIONS=1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CFF4A49717B9F007007B6B30</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CFF4A49817B9F007007B6B30</string>
-				<string>CFF4A49917B9F007007B6B30</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CFF4A49817B9F007007B6B30</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3F3A5235E8964109B173B443</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CoreFlickr/CoreFlickr-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CoreFlickr/CoreFlickr-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CFF4A49917B9F007007B6B30</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3F3A5235E8964109B173B443</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CoreFlickr/CoreFlickr-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CoreFlickr/CoreFlickr-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CFF4A49A17B9F1B8007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CoreDataTableViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A49B17B9F1B8007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CoreDataTableViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A49C17B9F1B8007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A49B17B9F1B8007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A49D17B9F1EC007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A49E17B9F205007B6B30</string>
-				<string>CFF4A49F17B9F205007B6B30</string>
-				<string>CFF4A4A017B9F205007B6B30</string>
-				<string>CFF4A4A117B9F205007B6B30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FlickrFetcher</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A49E17B9F205007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FlickrAPIKey_copyme_after_entering_key.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A49F17B9F205007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FlickrAPIKey.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4A017B9F205007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FlickrFetcher.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4A117B9F205007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FlickrFetcher.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4A217B9F205007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4A117B9F205007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A4A317B9F32C007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A4B317B9F50D007B6B30</string>
-				<string>CFF4A4B417B9F50D007B6B30</string>
-				<string>CFF4A4B617B9F55F007B6B30</string>
-				<string>CFF4A4B717B9F55F007B6B30</string>
-				<string>CFF4A4B017B9F50C007B6B30</string>
-				<string>CFF4A4B117B9F50C007B6B30</string>
-				<string>CFF4A4B817B9F55F007B6B30</string>
-				<string>CFF4A4B917B9F560007B6B30</string>
-				<string>CFF4A4A417B9F352007B6B30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Core Data</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4A417B9F352007B6B30</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFF4A4A517B9F352007B6B30</string>
-			</array>
-			<key>currentVersion</key>
-			<string>CFF4A4A517B9F352007B6B30</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>CoreFlickr.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>CFF4A4A517B9F352007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>CoreFlickr.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4A617B9F352007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4A417B9F352007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A4B017B9F50C007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Photographer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4B117B9F50C007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Photographer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4B217B9F50C007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4B117B9F50C007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A4B317B9F50D007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Photo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4B417B9F50D007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Photo.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4B517B9F50D007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4B417B9F50D007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A4B617B9F55F007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Photo+Flickr.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4B717B9F55F007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Photo+Flickr.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4B817B9F55F007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Photographer+Create.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4B917B9F560007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Photographer+Create.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4BA17B9F560007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4B717B9F55F007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A4BB17B9F560007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4B917B9F560007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A4BC17B9F5F6007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PhotographerCDTVC.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4BD17B9F5F6007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PhotographerCDTVC.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4BE17B9F5F6007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4BD17B9F5F6007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A4BF17B9F676007B6B30</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreData.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreData.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CFF4A4C017B9F676007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4BF17B9F676007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A4C117BA098B007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PhotosCDTVC.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4C217BA098B007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PhotosCDTVC.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4C317BA098B007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4C217BA098B007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFF4A4C417BA4999007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PhotoViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4C517BA4999007B6B30</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PhotoViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFF4A4C617BA499A007B6B30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFF4A4C517BA4999007B6B30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>CFF4A46C17B9F007007B6B30</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E3387A5A19E443EA2619334 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C837713FEC014B60AA62936B /* libPods.a */; };
+		CFF4A47817B9F007007B6B30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A47717B9F007007B6B30 /* UIKit.framework */; };
+		CFF4A47A17B9F007007B6B30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A47917B9F007007B6B30 /* Foundation.framework */; };
+		CFF4A47C17B9F007007B6B30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A47B17B9F007007B6B30 /* CoreGraphics.framework */; };
+		CFF4A48217B9F007007B6B30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A48017B9F007007B6B30 /* InfoPlist.strings */; };
+		CFF4A48417B9F007007B6B30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A48317B9F007007B6B30 /* main.m */; };
+		CFF4A48817B9F007007B6B30 /* PDCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A48717B9F007007B6B30 /* PDCAppDelegate.m */; };
+		CFF4A48A17B9F007007B6B30 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A48917B9F007007B6B30 /* Default.png */; };
+		CFF4A48C17B9F007007B6B30 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A48B17B9F007007B6B30 /* Default@2x.png */; };
+		CFF4A48E17B9F007007B6B30 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A48D17B9F007007B6B30 /* Default-568h@2x.png */; };
+		CFF4A49117B9F007007B6B30 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A48F17B9F007007B6B30 /* MainStoryboard.storyboard */; };
+		CFF4A49C17B9F1B8007B6B30 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A49B17B9F1B8007B6B30 /* CoreDataTableViewController.m */; };
+		CFF4A4A217B9F205007B6B30 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4A117B9F205007B6B30 /* FlickrFetcher.m */; };
+		CFF4A4A617B9F352007B6B30 /* CoreFlickr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4A417B9F352007B6B30 /* CoreFlickr.xcdatamodeld */; };
+		CFF4A4B217B9F50C007B6B30 /* Photographer.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4B117B9F50C007B6B30 /* Photographer.m */; };
+		CFF4A4B517B9F50D007B6B30 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4B417B9F50D007B6B30 /* Photo.m */; };
+		CFF4A4BA17B9F560007B6B30 /* Photo+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4B717B9F55F007B6B30 /* Photo+Flickr.m */; };
+		CFF4A4BB17B9F560007B6B30 /* Photographer+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4B917B9F560007B6B30 /* Photographer+Create.m */; };
+		CFF4A4BE17B9F5F6007B6B30 /* PhotographerCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4BD17B9F5F6007B6B30 /* PhotographerCDTVC.m */; };
+		CFF4A4C017B9F676007B6B30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A4BF17B9F676007B6B30 /* CoreData.framework */; };
+		CFF4A4C317BA098B007B6B30 /* PhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */; };
+		CFF4A4C617BA499A007B6B30 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4C517BA4999007B6B30 /* PhotoViewController.m */; };
+		CFF4A52817BBF855007B6B30 /* 731-cloud-download.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A52617BBF855007B6B30 /* 731-cloud-download.png */; };
+		CFF4A52917BBF855007B6B30 /* 731-cloud-download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A52717BBF855007B6B30 /* 731-cloud-download@2x.png */; };
+		CFF4A52B17BBFBF6007B6B30 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A52A17BBFBF6007B6B30 /* SystemConfiguration.framework */; };
+		CFF4A52D17BBFBFD007B6B30 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A52C17BBFBFD007B6B30 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F3A5235E8964109B173B443 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		C837713FEC014B60AA62936B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF4A47417B9F007007B6B30 /* CoreFlickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreFlickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF4A47717B9F007007B6B30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CFF4A47917B9F007007B6B30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CFF4A47B17B9F007007B6B30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CFF4A47F17B9F007007B6B30 /* CoreFlickr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreFlickr-Info.plist"; sourceTree = "<group>"; };
+		CFF4A48117B9F007007B6B30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFF4A48317B9F007007B6B30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFF4A48517B9F007007B6B30 /* CoreFlickr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreFlickr-Prefix.pch"; sourceTree = "<group>"; };
+		CFF4A48617B9F007007B6B30 /* PDCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDCAppDelegate.h; sourceTree = "<group>"; };
+		CFF4A48717B9F007007B6B30 /* PDCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDCAppDelegate.m; sourceTree = "<group>"; };
+		CFF4A48917B9F007007B6B30 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CFF4A48B17B9F007007B6B30 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CFF4A48D17B9F007007B6B30 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CFF4A49017B9F007007B6B30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CFF4A49A17B9F1B8007B6B30 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		CFF4A49B17B9F1B8007B6B30 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		CFF4A49E17B9F205007B6B30 /* FlickrAPIKey_copyme_after_entering_key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey_copyme_after_entering_key.h; sourceTree = "<group>"; };
+		CFF4A49F17B9F205007B6B30 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		CFF4A4A017B9F205007B6B30 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		CFF4A4A117B9F205007B6B30 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		CFF4A4A517B9F352007B6B30 /* CoreFlickr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreFlickr.xcdatamodel; sourceTree = "<group>"; };
+		CFF4A4B017B9F50C007B6B30 /* Photographer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photographer.h; sourceTree = "<group>"; };
+		CFF4A4B117B9F50C007B6B30 /* Photographer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photographer.m; sourceTree = "<group>"; };
+		CFF4A4B317B9F50D007B6B30 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		CFF4A4B417B9F50D007B6B30 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		CFF4A4B617B9F55F007B6B30 /* Photo+Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+Flickr.h"; sourceTree = "<group>"; };
+		CFF4A4B717B9F55F007B6B30 /* Photo+Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+Flickr.m"; sourceTree = "<group>"; };
+		CFF4A4B817B9F55F007B6B30 /* Photographer+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photographer+Create.h"; sourceTree = "<group>"; };
+		CFF4A4B917B9F560007B6B30 /* Photographer+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photographer+Create.m"; sourceTree = "<group>"; };
+		CFF4A4BC17B9F5F6007B6B30 /* PhotographerCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotographerCDTVC.h; sourceTree = "<group>"; };
+		CFF4A4BD17B9F5F6007B6B30 /* PhotographerCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotographerCDTVC.m; sourceTree = "<group>"; };
+		CFF4A4BF17B9F676007B6B30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CFF4A4C117BA098B007B6B30 /* PhotosCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCDTVC.h; sourceTree = "<group>"; };
+		CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCDTVC.m; sourceTree = "<group>"; };
+		CFF4A4C417BA4999007B6B30 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		CFF4A4C517BA4999007B6B30 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		CFF4A52617BBF855007B6B30 /* 731-cloud-download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "731-cloud-download.png"; sourceTree = "<group>"; };
+		CFF4A52717BBF855007B6B30 /* 731-cloud-download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "731-cloud-download@2x.png"; sourceTree = "<group>"; };
+		CFF4A52A17BBFBF6007B6B30 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CFF4A52C17BBFBFD007B6B30 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFF4A47117B9F007007B6B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF4A52D17BBFBFD007B6B30 /* MobileCoreServices.framework in Frameworks */,
+				CFF4A52B17BBFBF6007B6B30 /* SystemConfiguration.framework in Frameworks */,
+				CFF4A4C017B9F676007B6B30 /* CoreData.framework in Frameworks */,
+				CFF4A47817B9F007007B6B30 /* UIKit.framework in Frameworks */,
+				CFF4A47A17B9F007007B6B30 /* Foundation.framework in Frameworks */,
+				CFF4A47C17B9F007007B6B30 /* CoreGraphics.framework in Frameworks */,
+				6E3387A5A19E443EA2619334 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFF4A46B17B9F007007B6B30 = {
+			isa = PBXGroup;
+			children = (
+				CFF4A47D17B9F007007B6B30 /* CoreFlickr */,
+				CFF4A47617B9F007007B6B30 /* Frameworks */,
+				CFF4A47517B9F007007B6B30 /* Products */,
+				3F3A5235E8964109B173B443 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		CFF4A47517B9F007007B6B30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFF4A47417B9F007007B6B30 /* CoreFlickr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFF4A47617B9F007007B6B30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFF4A52C17BBFBFD007B6B30 /* MobileCoreServices.framework */,
+				CFF4A52A17BBFBF6007B6B30 /* SystemConfiguration.framework */,
+				CFF4A4BF17B9F676007B6B30 /* CoreData.framework */,
+				CFF4A47717B9F007007B6B30 /* UIKit.framework */,
+				CFF4A47917B9F007007B6B30 /* Foundation.framework */,
+				CFF4A47B17B9F007007B6B30 /* CoreGraphics.framework */,
+				C837713FEC014B60AA62936B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFF4A47D17B9F007007B6B30 /* CoreFlickr */ = {
+			isa = PBXGroup;
+			children = (
+				CFF4A4A317B9F32C007B6B30 /* Core Data */,
+				CFF4A49D17B9F1EC007B6B30 /* FlickrFetcher */,
+				CFF4A48617B9F007007B6B30 /* PDCAppDelegate.h */,
+				CFF4A48717B9F007007B6B30 /* PDCAppDelegate.m */,
+				CFF4A48F17B9F007007B6B30 /* MainStoryboard.storyboard */,
+				CFF4A4C417BA4999007B6B30 /* PhotoViewController.h */,
+				CFF4A4C517BA4999007B6B30 /* PhotoViewController.m */,
+				CFF4A4BC17B9F5F6007B6B30 /* PhotographerCDTVC.h */,
+				CFF4A4BD17B9F5F6007B6B30 /* PhotographerCDTVC.m */,
+				CFF4A4C117BA098B007B6B30 /* PhotosCDTVC.h */,
+				CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */,
+				CFF4A49A17B9F1B8007B6B30 /* CoreDataTableViewController.h */,
+				CFF4A49B17B9F1B8007B6B30 /* CoreDataTableViewController.m */,
+				CFF4A47E17B9F007007B6B30 /* Supporting Files */,
+			);
+			path = CoreFlickr;
+			sourceTree = "<group>";
+		};
+		CFF4A47E17B9F007007B6B30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFF4A52517BBF84C007B6B30 /* Images */,
+				CFF4A47F17B9F007007B6B30 /* CoreFlickr-Info.plist */,
+				CFF4A48017B9F007007B6B30 /* InfoPlist.strings */,
+				CFF4A48317B9F007007B6B30 /* main.m */,
+				CFF4A48517B9F007007B6B30 /* CoreFlickr-Prefix.pch */,
+				CFF4A48917B9F007007B6B30 /* Default.png */,
+				CFF4A48B17B9F007007B6B30 /* Default@2x.png */,
+				CFF4A48D17B9F007007B6B30 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFF4A49D17B9F1EC007B6B30 /* FlickrFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				CFF4A49E17B9F205007B6B30 /* FlickrAPIKey_copyme_after_entering_key.h */,
+				CFF4A49F17B9F205007B6B30 /* FlickrAPIKey.h */,
+				CFF4A4A017B9F205007B6B30 /* FlickrFetcher.h */,
+				CFF4A4A117B9F205007B6B30 /* FlickrFetcher.m */,
+			);
+			name = FlickrFetcher;
+			sourceTree = "<group>";
+		};
+		CFF4A4A317B9F32C007B6B30 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				CFF4A4B317B9F50D007B6B30 /* Photo.h */,
+				CFF4A4B417B9F50D007B6B30 /* Photo.m */,
+				CFF4A4B617B9F55F007B6B30 /* Photo+Flickr.h */,
+				CFF4A4B717B9F55F007B6B30 /* Photo+Flickr.m */,
+				CFF4A4B017B9F50C007B6B30 /* Photographer.h */,
+				CFF4A4B117B9F50C007B6B30 /* Photographer.m */,
+				CFF4A4B817B9F55F007B6B30 /* Photographer+Create.h */,
+				CFF4A4B917B9F560007B6B30 /* Photographer+Create.m */,
+				CFF4A4A417B9F352007B6B30 /* CoreFlickr.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		CFF4A52517BBF84C007B6B30 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CFF4A52617BBF855007B6B30 /* 731-cloud-download.png */,
+				CFF4A52717BBF855007B6B30 /* 731-cloud-download@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFF4A47317B9F007007B6B30 /* CoreFlickr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF4A49717B9F007007B6B30 /* Build configuration list for PBXNativeTarget "CoreFlickr" */;
+			buildPhases = (
+				46A8D5D27CA042F7A87BAEE3 /* Check Pods Manifest.lock */,
+				CFF4A47017B9F007007B6B30 /* Sources */,
+				CFF4A47117B9F007007B6B30 /* Frameworks */,
+				CFF4A47217B9F007007B6B30 /* Resources */,
+				B3BE29D5AE7842B29CEF38C2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreFlickr;
+			productName = CoreFlickr;
+			productReference = CFF4A47417B9F007007B6B30 /* CoreFlickr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFF4A46C17B9F007007B6B30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PDC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Pas de Chocolat, LLC";
+			};
+			buildConfigurationList = CFF4A46F17B9F007007B6B30 /* Build configuration list for PBXProject "CoreFlickr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CFF4A46B17B9F007007B6B30;
+			productRefGroup = CFF4A47517B9F007007B6B30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFF4A47317B9F007007B6B30 /* CoreFlickr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFF4A47217B9F007007B6B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF4A48217B9F007007B6B30 /* InfoPlist.strings in Resources */,
+				CFF4A48A17B9F007007B6B30 /* Default.png in Resources */,
+				CFF4A48C17B9F007007B6B30 /* Default@2x.png in Resources */,
+				CFF4A48E17B9F007007B6B30 /* Default-568h@2x.png in Resources */,
+				CFF4A49117B9F007007B6B30 /* MainStoryboard.storyboard in Resources */,
+				CFF4A52817BBF855007B6B30 /* 731-cloud-download.png in Resources */,
+				CFF4A52917BBF855007B6B30 /* 731-cloud-download@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46A8D5D27CA042F7A87BAEE3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		B3BE29D5AE7842B29CEF38C2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFF4A47017B9F007007B6B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF4A48417B9F007007B6B30 /* main.m in Sources */,
+				CFF4A48817B9F007007B6B30 /* PDCAppDelegate.m in Sources */,
+				CFF4A49C17B9F1B8007B6B30 /* CoreDataTableViewController.m in Sources */,
+				CFF4A4A217B9F205007B6B30 /* FlickrFetcher.m in Sources */,
+				CFF4A4A617B9F352007B6B30 /* CoreFlickr.xcdatamodeld in Sources */,
+				CFF4A4B217B9F50C007B6B30 /* Photographer.m in Sources */,
+				CFF4A4B517B9F50D007B6B30 /* Photo.m in Sources */,
+				CFF4A4BA17B9F560007B6B30 /* Photo+Flickr.m in Sources */,
+				CFF4A4BB17B9F560007B6B30 /* Photographer+Create.m in Sources */,
+				CFF4A4BE17B9F5F6007B6B30 /* PhotographerCDTVC.m in Sources */,
+				CFF4A4C317BA098B007B6B30 /* PhotosCDTVC.m in Sources */,
+				CFF4A4C617BA499A007B6B30 /* PhotoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CFF4A48017B9F007007B6B30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFF4A48117B9F007007B6B30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CFF4A48F17B9F007007B6B30 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFF4A49017B9F007007B6B30 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFF4A49517B9F007007B6B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CFF4A49617B9F007007B6B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFF4A49817B9F007007B6B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3A5235E8964109B173B443 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreFlickr/CoreFlickr-Prefix.pch";
+				INFOPLIST_FILE = "CoreFlickr/CoreFlickr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CFF4A49917B9F007007B6B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3A5235E8964109B173B443 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreFlickr/CoreFlickr-Prefix.pch";
+				INFOPLIST_FILE = "CoreFlickr/CoreFlickr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFF4A46F17B9F007007B6B30 /* Build configuration list for PBXProject "CoreFlickr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF4A49517B9F007007B6B30 /* Debug */,
+				CFF4A49617B9F007007B6B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFF4A49717B9F007007B6B30 /* Build configuration list for PBXNativeTarget "CoreFlickr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF4A49817B9F007007B6B30 /* Debug */,
+				CFF4A49917B9F007007B6B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFF4A4A417B9F352007B6B30 /* CoreFlickr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFF4A4A517B9F352007B6B30 /* CoreFlickr.xcdatamodel */,
+			);
+			currentVersion = CFF4A4A517B9F352007B6B30 /* CoreFlickr.xcdatamodel */;
+			path = CoreFlickr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CFF4A46C17B9F007007B6B30 /* Project object */;
+}
