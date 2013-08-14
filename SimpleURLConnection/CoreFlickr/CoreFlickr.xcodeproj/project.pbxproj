@@ -22,17 +22,17 @@
 		CFF4A4A217B9F205007B6B30 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4A117B9F205007B6B30 /* FlickrFetcher.m */; };
 		CFF4A4A617B9F352007B6B30 /* CoreFlickr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4A417B9F352007B6B30 /* CoreFlickr.xcdatamodeld */; };
 		CFF4A4B217B9F50C007B6B30 /* Photographer.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4B117B9F50C007B6B30 /* Photographer.m */; };
-		CFF4A4B517B9F50D007B6B30 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4B417B9F50D007B6B30 /* Photo.m */; };
 		CFF4A4BA17B9F560007B6B30 /* Photo+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4B717B9F55F007B6B30 /* Photo+Flickr.m */; };
 		CFF4A4BB17B9F560007B6B30 /* Photographer+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4B917B9F560007B6B30 /* Photographer+Create.m */; };
 		CFF4A4BE17B9F5F6007B6B30 /* PhotographerCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4BD17B9F5F6007B6B30 /* PhotographerCDTVC.m */; };
 		CFF4A4C017B9F676007B6B30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A4BF17B9F676007B6B30 /* CoreData.framework */; };
 		CFF4A4C317BA098B007B6B30 /* PhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */; };
 		CFF4A4C617BA499A007B6B30 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A4C517BA4999007B6B30 /* PhotoViewController.m */; };
-		CFF4A52817BBF855007B6B30 /* 731-cloud-download.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A52617BBF855007B6B30 /* 731-cloud-download.png */; };
-		CFF4A52917BBF855007B6B30 /* 731-cloud-download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A52717BBF855007B6B30 /* 731-cloud-download@2x.png */; };
 		CFF4A52B17BBFBF6007B6B30 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A52A17BBFBF6007B6B30 /* SystemConfiguration.framework */; };
 		CFF4A52D17BBFBFD007B6B30 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4A52C17BBFBFD007B6B30 /* MobileCoreServices.framework */; };
+		CFF4A53317BC02F6007B6B30 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF4A53217BC02F6007B6B30 /* Photo.m */; };
+		CFF4A53617BC03A3007B6B30 /* 731-cloud-download-square.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A53417BC03A3007B6B30 /* 731-cloud-download-square.png */; };
+		CFF4A53717BC03A3007B6B30 /* 731-cloud-download-square@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4A53517BC03A3007B6B30 /* 731-cloud-download-square@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +61,6 @@
 		CFF4A4A517B9F352007B6B30 /* CoreFlickr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreFlickr.xcdatamodel; sourceTree = "<group>"; };
 		CFF4A4B017B9F50C007B6B30 /* Photographer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photographer.h; sourceTree = "<group>"; };
 		CFF4A4B117B9F50C007B6B30 /* Photographer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photographer.m; sourceTree = "<group>"; };
-		CFF4A4B317B9F50D007B6B30 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		CFF4A4B417B9F50D007B6B30 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		CFF4A4B617B9F55F007B6B30 /* Photo+Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+Flickr.h"; sourceTree = "<group>"; };
 		CFF4A4B717B9F55F007B6B30 /* Photo+Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+Flickr.m"; sourceTree = "<group>"; };
 		CFF4A4B817B9F55F007B6B30 /* Photographer+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photographer+Create.h"; sourceTree = "<group>"; };
@@ -74,10 +72,12 @@
 		CFF4A4C217BA098B007B6B30 /* PhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCDTVC.m; sourceTree = "<group>"; };
 		CFF4A4C417BA4999007B6B30 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		CFF4A4C517BA4999007B6B30 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
-		CFF4A52617BBF855007B6B30 /* 731-cloud-download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "731-cloud-download.png"; sourceTree = "<group>"; };
-		CFF4A52717BBF855007B6B30 /* 731-cloud-download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "731-cloud-download@2x.png"; sourceTree = "<group>"; };
 		CFF4A52A17BBFBF6007B6B30 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CFF4A52C17BBFBFD007B6B30 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CFF4A53117BC02F6007B6B30 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		CFF4A53217BC02F6007B6B30 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		CFF4A53417BC03A3007B6B30 /* 731-cloud-download-square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "731-cloud-download-square.png"; sourceTree = "<group>"; };
+		CFF4A53517BC03A3007B6B30 /* 731-cloud-download-square@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "731-cloud-download-square@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +180,8 @@
 		CFF4A4A317B9F32C007B6B30 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				CFF4A4B317B9F50D007B6B30 /* Photo.h */,
-				CFF4A4B417B9F50D007B6B30 /* Photo.m */,
+				CFF4A53117BC02F6007B6B30 /* Photo.h */,
+				CFF4A53217BC02F6007B6B30 /* Photo.m */,
 				CFF4A4B617B9F55F007B6B30 /* Photo+Flickr.h */,
 				CFF4A4B717B9F55F007B6B30 /* Photo+Flickr.m */,
 				CFF4A4B017B9F50C007B6B30 /* Photographer.h */,
@@ -196,8 +196,8 @@
 		CFF4A52517BBF84C007B6B30 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				CFF4A52617BBF855007B6B30 /* 731-cloud-download.png */,
-				CFF4A52717BBF855007B6B30 /* 731-cloud-download@2x.png */,
+				CFF4A53417BC03A3007B6B30 /* 731-cloud-download-square.png */,
+				CFF4A53517BC03A3007B6B30 /* 731-cloud-download-square@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -261,8 +261,8 @@
 				CFF4A48C17B9F007007B6B30 /* Default@2x.png in Resources */,
 				CFF4A48E17B9F007007B6B30 /* Default-568h@2x.png in Resources */,
 				CFF4A49117B9F007007B6B30 /* MainStoryboard.storyboard in Resources */,
-				CFF4A52817BBF855007B6B30 /* 731-cloud-download.png in Resources */,
-				CFF4A52917BBF855007B6B30 /* 731-cloud-download@2x.png in Resources */,
+				CFF4A53617BC03A3007B6B30 /* 731-cloud-download-square.png in Resources */,
+				CFF4A53717BC03A3007B6B30 /* 731-cloud-download-square@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,12 +310,12 @@
 				CFF4A4A217B9F205007B6B30 /* FlickrFetcher.m in Sources */,
 				CFF4A4A617B9F352007B6B30 /* CoreFlickr.xcdatamodeld in Sources */,
 				CFF4A4B217B9F50C007B6B30 /* Photographer.m in Sources */,
-				CFF4A4B517B9F50D007B6B30 /* Photo.m in Sources */,
 				CFF4A4BA17B9F560007B6B30 /* Photo+Flickr.m in Sources */,
 				CFF4A4BB17B9F560007B6B30 /* Photographer+Create.m in Sources */,
 				CFF4A4BE17B9F5F6007B6B30 /* PhotographerCDTVC.m in Sources */,
 				CFF4A4C317BA098B007B6B30 /* PhotosCDTVC.m in Sources */,
 				CFF4A4C617BA499A007B6B30 /* PhotoViewController.m in Sources */,
+				CFF4A53317BC02F6007B6B30 /* Photo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "PhotosCDTVC.h"
 #import "Photo.h"
+#import "AFNetworking.h"
 
 @interface PhotosCDTVC ()
 
@@ -51,6 +52,9 @@
     
     cell.textLabel.text = photo.title;
     cell.detailTextLabel.text = photo.subtitle;
+    cell.imageView.image = nil;
+    [cell.imageView setImageWithURL:[NSURL URLWithString:photo.thumbnailURLString]
+                   placeholderImage:[UIImage imageNamed:@"731-cloud-download-square"]];
     
     return cell;
     
